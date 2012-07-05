@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<book xmlns="http://docbook.org/ns/docbook" 
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>Main Document #1</title>
+        <author>
+            <orgname>Organization Name</orgname>
+            <address>
+                <city>City</city>
+                <street>Street</street>
+                <postcode>000000</postcode>
+                <country>Country</country>
+            </address>
+            <email>user@example.com</email>
+        </author>
+    </info>
+        <chapter xml:id="chapter_fjj_31r_5g">
+        <title>Chapter in Main Doc 1</title>
+        <section xml:id="section_hjj_31r_5g">
+            <title>Section in Main Doc 1</title>
+            <para>Ipsum lorem. <figure>
+                    <title>Here are some pink tulips</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="images/tulips.jpg"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure></para>
+        </section>
+        <xi:include href="../some-other-doc/main-doc2.xml"
+            xpointer="section_cvv_h1r_5g"/>
+        <xi:include href="../some-other-doc/main-doc2.xml"
+            xpointer="section_evv_h1r_5g"/>
+    </chapter>
+</book>
