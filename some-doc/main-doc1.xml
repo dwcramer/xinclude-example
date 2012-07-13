@@ -29,9 +29,7 @@
                     </mediaobject>
                 </figure></para>
         </section>
-        <xi:include href="../some-other-doc/main-doc2.xml"
-            xpointer="section_cvv_h1r_5g"/>
-        <xi:include href="../some-other-doc/main-doc2.xml"
-            xpointer="section_evv_h1r_5g"/>
+        <xi:include href="../some-other-doc/section1.xml"/>
+        <xi:include href="../some-other-doc/section2.xml"/>
     </chapter>
 </book>

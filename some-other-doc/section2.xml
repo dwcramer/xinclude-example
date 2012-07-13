@@ -1,0 +1,16 @@
+        <section xml:id="section_evv_h1r_5g" xmlns="http://docbook.org/ns/docbook" 
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+            <title>Section 1.2 in Main Doc 2</title>
+            <para>Ipsum lorem again. <figure>
+                    <title>More tulips...this file is also named
+                        tulips.jpg</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata
+                                fileref="http://cdn.c.photoshelter.com/img-get/I0000PkMn_UVYoTE/s/860/860/Tulips.jpg"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure></para>
+        </section>

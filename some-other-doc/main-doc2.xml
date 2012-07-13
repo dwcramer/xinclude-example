@@ -18,30 +18,7 @@
     </info>
         <chapter xml:id="chapter_y5v_h1r_5g">
         <title>Chapter in Main Doc 2</title>
-        <section xml:id="section_cvv_h1r_5g">
-            <title>Section1 in Main Doc 2</title>
-            <para>Ipsum lorem. <figure>
-                    <title>Here are some different pink tulips</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata fileref="images/tulips.jpg"/>
-                        </imageobject>
-                    </mediaobject>
-                </figure></para>
-        </section>
-        <section xml:id="section_evv_h1r_5g">
-            <title>Section 1.2 in Main Doc 2</title>
-            <para>Ipsum lorem again. <figure>
-                    <title>More tulips...this file is also named
-                        tulips.jpg</title>
-                    <mediaobject>
-                        <imageobject>
-                            <imagedata
-                                fileref="http://cdn.c.photoshelter.com/img-get/I0000PkMn_UVYoTE/s/860/860/Tulips.jpg"
-                            />
-                        </imageobject>
-                    </mediaobject>
-                </figure></para>
-        </section>
+        <xi:include href="../some-other-doc/section1.xml"/>
+        <xi:include href="../some-other-doc/section2.xml"/>
     </chapter>
 </book>
