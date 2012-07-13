@@ -1,0 +1,7 @@
+<project basedir=".">
+  <property name="input-xml" value="main-doc1.xml"/>
+  <property name="input-images-dirs" value="images/**"/>
+  <property name="output-dir" value="out"/>
+  <property name="validate-against-dtd" value="false"/>
+  <import file="/home/dcramer/docbook-open-repository/svn/trunk/xsl/webhelp/build.xml"/>
+</project>
