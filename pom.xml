@@ -1,0 +1,74 @@
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.rackspace.cloud.docs.example</groupId>
+  <artifactId>xinclude-example-docs</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Xinclude Example Doc</name>
+  <profiles>
+    <profile>
+      <id>Rackspace Research Repositories</id>
+      <activation>
+	<activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+	<repository>
+	  <id>rackspace-research</id>
+	  <name>Rackspace Research Repository</name>
+	  <url>http://maven.research.rackspacecloud.com/content/groups/public/</url>
+	</repository>
+      </repositories>
+      <pluginRepositories>
+	<pluginRepository>
+	  <id>rackspace-research</id>
+	  <name>Rackspace Research Repository</name>
+	  <url>http://maven.research.rackspacecloud.com/content/groups/public/</url>
+	</pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <build>
+    <plugins>
+      <plugin>
+	<groupId>com.rackspace.cloud.api</groupId>
+	<artifactId>clouddocs-maven-plugin</artifactId>
+	<version>1.5.0</version>
+	<executions>
+	  <execution>
+	    <id>g1</id>
+	    <goals>
+	      <goal>generate-webhelp</goal> 
+	      <goal>generate-pdf</goal> 
+	    </goals>
+	    <phase>generate-sources</phase>	    
+	    <configuration>
+	      <sourceDirectory>${basedir}/some-doc</sourceDirectory>
+	      <includes>main-doc1.xml</includes>
+	    </configuration>
+	  </execution>
+	  <execution>
+	    <id>g2</id>
+	    <goals>
+	      <goal>generate-webhelp</goal> 
+	      <goal>generate-pdf</goal> 
+	    </goals>
+	    <phase>generate-sources</phase>	    
+	    <configuration>
+	      <sourceDirectory>${basedir}/some-other-doc</sourceDirectory>
+	      <includes>main-doc2.xml</includes>
+	    </configuration>
+	  </execution>
+	</executions>
+
+	<configuration>
+	  <xincludeSupported>true</xincludeSupported>
+	  <enableDisqus>0</enableDisqus>
+	  <showXslMessages>true</showXslMessages>
+	</configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
