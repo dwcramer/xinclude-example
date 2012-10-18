@@ -20,10 +20,14 @@
         <title>Chapter in Main Doc 1</title>
         <section xml:id="section_hjj_31r_5g">
             <title>Section in Main Doc 1</title>
+	    <para role="blah">foobar</para>
             <para>Ipsum lorem. <figure>
                     <title>Here are some pink tulips</title>
                     <mediaobject>
-                        <imageobject>
+                        <imageobject role="fo">
+                            <imagedata fileref="../some-other-doc/images/tulips.jpg"/>
+                        </imageobject>
+                        <imageobject role="html">
                             <imagedata fileref="images/tulips.jpg"/>
                         </imageobject>
                     </mediaobject>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <project 
     xmlns="http://maven.apache.org/POM/4.0.0" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -35,34 +36,32 @@
       <plugin>
 	<groupId>com.rackspace.cloud.api</groupId>
 	<artifactId>clouddocs-maven-plugin</artifactId>
-	<version>1.5.0</version>
+	<version>1.5.1-SNAPSHOT</version>
 	<executions>
 	  <execution>
 	    <id>g1</id>
 	    <goals>
 	      <goal>generate-webhelp</goal> 
-	      <goal>generate-pdf</goal> 
 	    </goals>
 	    <phase>generate-sources</phase>	    
 	    <configuration>
 	      <sourceDirectory>${basedir}/some-doc</sourceDirectory>
 	      <includes>main-doc1.xml</includes>
+	      <security>internal</security>
 	    </configuration>
 	  </execution>
-	  <execution>
-	    <id>g2</id>
-	    <goals>
-	      <goal>generate-webhelp</goal> 
-	      <goal>generate-pdf</goal> 
-	    </goals>
-	    <phase>generate-sources</phase>	    
-	    <configuration>
-	      <sourceDirectory>${basedir}/some-other-doc</sourceDirectory>
-	      <includes>main-doc2.xml</includes>
-	    </configuration>
-	  </execution>
+	  <!-- <execution> -->
+	  <!--   <id>g2</id> -->
+	  <!--   <goals> -->
+	  <!--     <goal>generate-webhelp</goal>  -->
+	  <!--   </goals> -->
+	  <!--   <phase>generate-sources</phase>	     -->
+	  <!--   <configuration> -->
+	  <!--     <sourceDirectory>${basedir}/some-other-doc</sourceDirectory> -->
+	  <!--     <includes>main-doc2.xml</includes> -->
+	  <!--   </configuration> -->
+	  <!-- </execution> -->
 	</executions>
-
 	<configuration>
 	  <xincludeSupported>true</xincludeSupported>
 	  <enableDisqus>0</enableDisqus>
