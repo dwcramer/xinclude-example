@@ -18,6 +18,10 @@
     </info>
         <chapter xml:id="chapter_fjj_31r_5g">
         <title>Chapter in Main Doc 1</title>
+	<section xml:id="internal">
+	  <title>Internal section</title>
+	  <para>This is internal</para>
+	</section>
         <section xml:id="section_hjj_31r_5g">
             <title>Section in Main Doc 1</title>
 	    <para role="blah">foobar</para>
