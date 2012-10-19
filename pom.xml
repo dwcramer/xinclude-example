@@ -50,17 +50,18 @@
 	      <security>internal</security>
 	    </configuration>
 	  </execution>
-	  <!-- <execution> -->
-	  <!--   <id>g2</id> -->
-	  <!--   <goals> -->
-	  <!--     <goal>generate-webhelp</goal>  -->
-	  <!--   </goals> -->
-	  <!--   <phase>generate-sources</phase>	     -->
-	  <!--   <configuration> -->
-	  <!--     <sourceDirectory>${basedir}/some-other-doc</sourceDirectory> -->
-	  <!--     <includes>main-doc2.xml</includes> -->
-	  <!--   </configuration> -->
-	  <!-- </execution> -->
+	  <execution>
+	    <id>g2</id>
+	    <goals>
+	      <goal>generate-pdf</goal>
+	    </goals>
+	    <phase>generate-sources</phase>
+	    <configuration>
+	      <sourceDirectory>${basedir}/some-other-doc</sourceDirectory>
+	      <includes>main-doc2.xml</includes>
+	      <security>internal</security>
+	    </configuration>
+	  </execution>
 	</executions>
 	<configuration>
 	  <xincludeSupported>true</xincludeSupported>

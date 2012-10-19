@@ -18,7 +18,12 @@
     </info>
         <chapter xml:id="chapter_y5v_h1r_5g">
         <title>Chapter in Main Doc 2</title>
+	<section xml:id="internal" security="internal">
+	  <title>Internal section</title>
+	  <para>This is internal</para>
+	</section>
         <xi:include href="../some-other-doc/section1.xml"/>
         <xi:include href="../some-other-doc/section2.xml"/>
+
     </chapter>
 </book>

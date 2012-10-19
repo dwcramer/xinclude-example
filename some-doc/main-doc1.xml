@@ -18,7 +18,7 @@
     </info>
         <chapter xml:id="chapter_fjj_31r_5g">
         <title>Chapter in Main Doc 1</title>
-	<section xml:id="internal">
+	<section xml:id="internal" security="internal">
 	  <title>Internal section</title>
 	  <para>This is internal</para>
 	</section>
