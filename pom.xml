@@ -48,6 +48,7 @@
 	      <sourceDirectory>${basedir}/some-doc</sourceDirectory>
 	      <includes>main-doc1.xml</includes>
 	      <security>internal</security>
+	      <coverColor>ADFF2F</coverColor>
 	    </configuration>
 	  </execution>
 	  <execution>
@@ -60,6 +61,7 @@
 	      <sourceDirectory>${basedir}/some-other-doc</sourceDirectory>
 	      <includes>main-doc2.xml</includes>
 	      <security>internal</security>
+	      <coverColor>ADFF2F</coverColor>
 	    </configuration>
 	  </execution>
 	</executions>
