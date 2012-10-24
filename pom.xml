@@ -49,6 +49,7 @@
 	      <includes>main-doc1.xml</includes>
 	      <security>internal</security>
 	      <coverColor>ADFF2F</coverColor>
+	      <profileOs>linux</profileOs>
 	    </configuration>
 	  </execution>
 	  <execution>
@@ -62,6 +63,7 @@
 	      <includes>main-doc2.xml</includes>
 	      <security>internal</security>
 	      <coverColor>ADFF2F</coverColor>
+	      <profileOs>windows</profileOs>
 	    </configuration>
 	  </execution>
 	</executions>

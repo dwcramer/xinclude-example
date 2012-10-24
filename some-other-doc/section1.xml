@@ -12,4 +12,8 @@
                 </figure></para>
 
 		<xi:include href="more-stuff/section.xml"/>
+		<section xml:id="profileOsTest" os="linux">
+		  <title>Linux section</title>
+		  <para>This is profileOs="linux"</para>
+		</section>		
         </section>
